@@ -1,1 +1,1 @@
-(()=>{"use strict";document.querySelector(".modal")})();
+(()=>{"use strict";var i=document.querySelector(".modal");window.visibleModal=function(){i.classList.remove("hidden"),i.classList.add("visible")},window.closeItemView=function(){i.classList.remove("visible"),i.classList.add("hidden")}})();
