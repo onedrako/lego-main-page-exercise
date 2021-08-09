@@ -1,0 +1,27 @@
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+
+node_js:
+  - 12
+
+git:
+  depth: 3
+
+script:
+  - yarn build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  githubtoken: asds
+  local_dir: dist/
+  target_branch: gh-pages
+  commit-message: "Deploy del proyecto"
+  on:
+    branch: master
+
