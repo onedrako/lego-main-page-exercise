@@ -5,7 +5,6 @@ const CopyWebpackPlugin = require("copy-webpack-plugin")
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const TerserWebpackPlugin = require("terser-webpack-plugin")
 
-
 module.exports = {
     entry: "./src/index.js",
 
@@ -25,7 +24,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader"
-            }
+                }
             },
             {
                 test: /\.css$/i,
@@ -34,7 +33,7 @@ module.exports = {
                     "css-loader"
                 ]
             }
-    ],
+        ]
     },
 
     plugins:[

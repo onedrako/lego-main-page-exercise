@@ -1,18 +1,9 @@
-// {
-//     "presets": [
-//         "@babel/presets-env"
-//     ],  
-//     "plugins": [
-//         "@babel/plugin-transform-runtime"
-//     ]
-    
-// }
-
 {
-    "presets":[   //Añadimos las configuraciones que se agregaron al instalar BABEl en terminal
-        "@babel/preset-env"    // => Para trabajar con JS moderno
-    ],
+    "presets": [
+        "@babel/preset-env"
+    ],  
     "plugins": [
         "@babel/plugin-transform-runtime"
     ]
+    
 }
