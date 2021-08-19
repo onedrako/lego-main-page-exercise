@@ -1,7 +1,10 @@
 :root {
     --yellow: #ffd602;
     --red: #d5040a;
-    --blue: #036cb6; 
+    --blue: #036cb6;
+    --lego-red: #ff0000;
+    --lego-yellow: #f7f400;
+    --lego-gray: #727272;  
 }
 
 *{
@@ -87,7 +90,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: pink;
+    background-color: white;
     position: absolute;
     z-index: 3;
 
@@ -95,7 +98,7 @@ body{
 }
 
 .loader div{
-    background: white;
+    /* background: white; */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -108,16 +111,19 @@ body{
 
 .loader div:nth-child(1){
     animation-delay: 0.2s;
+    background: var(--lego-red);
 }
 
 
 .loader div:nth-child(2){
     animation-delay: 0.4s;
+    background: var(--lego-yellow);
 }
 
 
 .loader div:nth-child(3){
     animation-delay: 0.6s;
+    background: var(--lego-gray);
 }
 
 
@@ -255,13 +261,13 @@ body{
 
 @keyframes side-content-img {
     0%{
-        transform: translateY(600px);
+        transform: translateX(600px);
     }
     80%{
-        transform: translateY(-30px);
+        transform: translateX(-30px);
     }
     100%{
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
 }
 
@@ -273,7 +279,7 @@ body{
 
     height: 100%;
     
-    background-color: var(--yellow);
+    /* background-color: var(--yellow); */
     border-radius: 0 80px 0 0;
 
     transform: translateY(100%);
@@ -300,7 +306,7 @@ body{
     width: 100%;
     margin-bottom: 35px; */
     position: absolute;
-    width: 160px;
+    height: 160px;
     bottom: 30px;
 
     transform: translateY(0px) scale(1);
@@ -390,7 +396,7 @@ body{
     cursor: pointer;
     display: grid;
     place-items: center;
-    background-color: yellow;
+    background-color: var(--lego-yellow);
 }
 
 #radio-1:checked ~ .cards #card-1, 
