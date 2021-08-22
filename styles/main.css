@@ -396,7 +396,7 @@ body{
     cursor: pointer;
     display: grid;
     place-items: center;
-    background-color: var(--lego-yellow);
+    background-color: var(--lego-gray);
 }
 
 #radio-1:checked ~ .cards #card-1, 
