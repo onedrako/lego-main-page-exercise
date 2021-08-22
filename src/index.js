@@ -38,18 +38,18 @@ function verifyModal(Event) {
         case "Robin":
             itemCard1.src = "https://pngimage.net/wp-content/uploads/2018/06/robin-lego-png-1.png"
             itemCard1.alt = "Robin Item 1"
-            itemCard2.src = "../assets/images/robin2.png"            
+            itemCard2.src = "./assets/images/robin2.png"            
             itemCard2.alt = "Robin Item 2"
-            itemCard3.src = "../assets/images/robin3.png"            
+            itemCard3.src = "./assets/images/robin3.png"            
             itemCard3.alt = "Robin Item 3"
             // console.log(itemCard2)
         break
         case "Super Man":
-            itemCard1.src = "../assets/images/superman2.png"            
+            itemCard1.src = "./assets/images/superman2.png"            
             itemCard1.alt = "Super Man Item 1"
-            itemCard2.src = "../assets/images/superman1.png"
+            itemCard2.src = "./assets/images/superman1.png"
             itemCard2.alt = "Super Man Item 2"
-            itemCard3.src = "../assets/images/superman3.png"            
+            itemCard3.src = "./assets/images/superman3.png"            
             itemCard3.alt = "Super Man Item 3"
             // console.log(itemCard3)   
         break 
